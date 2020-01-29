@@ -1,7 +1,8 @@
 import React, { SFC, useState } from 'react'
 import * as R from 'ramda'
-import OwnerMenuItem from './OwnerMenuItem'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
+import OwnerMenuItem from './OwnerMenuItem'
 import OwnerMenuContainer from './OwnerMenuContainer'
 import OwnerMenuFilter from './OwnerMenuFilter'
 import MenuItem from '../Menu/MenuItem'
@@ -29,14 +30,22 @@ const OwnerMenu: SFC<Props> = ({ owners }) => {
           setFilter(e.target.value)
         }
       />
-      {filteredOwners.length === 0 ? (
-        <MenuItem>No Results</MenuItem>
-      ) : (
-        R.map(
-          (owner) => <OwnerMenuItem key={owner.name} {...owner} />,
+      <ReactCSSTransitionGroup transitionName="fade">
+        {/* {filteredOwners.length === 0 ? (
+          <MenuItem>No Results</MenuItem>
+        ) : (
+          R.map(
+            (owner) => <OwnerMenuItem key={owner.name} {...owner} />,
+            filteredOwners
+          )
+        )} */}
+        {R.map(
+          (owner) => (
+            <OwnerMenuItem key={owner.name} {...owner} />
+          ),
           filteredOwners
-        )
-      )}
+        )}
+      </ReactCSSTransitionGroup>
     </OwnerMenuContainer>
   )
 }
