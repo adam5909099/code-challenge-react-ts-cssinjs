@@ -40,7 +40,7 @@ const Container = styled(MenuItem)(({ theme }) => ({
 
 const OwnerMenuItem: SFC<Owner> = ({ img, name, title }) => (
   <Container>
-    <OwnerMenuItemImg img={img}></OwnerMenuItemImg>
+    <OwnerMenuItemImg img={img} alt={name}></OwnerMenuItemImg>
     <Name>{name}</Name>
     <Title>{title}</Title>
   </Container>

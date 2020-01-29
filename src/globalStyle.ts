@@ -11,7 +11,8 @@ export default css`
   }
 
   body,
-  input {
+  input,
+  ::placeholder {
     font-family: proxima-nova, sans-serif;
     font-weight: ${theme.fontWeights.pr};
     font-size: ${theme.fontSizes.lg};
