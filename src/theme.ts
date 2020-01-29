@@ -12,7 +12,7 @@ const theme = {
     // text
     tx1: '#192533',
     tx2: '#324964',
-    tx3: '#6b85a3',
+    tx3: '#60789A',
 
     // function
     positive: '#36B289',
