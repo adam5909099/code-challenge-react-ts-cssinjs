@@ -1,15 +1,16 @@
-export const theme = {
+const theme = {
   colors: {
     // primary
     accordBlue: '#1b76de',
     border: '#d1e3f8',
 
     // standard
-    pureWhite: '#ffffff',
-    pureBlack: '#000000',
+    white: '#ffffff',
+    black: '#000000',
+    blue: '#1E75D8',
 
     // text
-    tx1: '#1a2533',
+    tx1: '#192533',
     tx2: '#324964',
     tx3: '#6b85a3',
 
@@ -41,5 +42,18 @@ export const theme = {
     sm: 10,
     md: 12,
     lg: 14
+  },
+
+  radii: {
+    md: 4
+  },
+
+  shadows: {
+    md:
+      '0px 4px 12px rgba(107, 133, 163, 0.06), 0px 4px 16px rgba(50, 132, 225, 0.16)'
   }
 }
+
+export default theme
+
+export type Theme = typeof theme

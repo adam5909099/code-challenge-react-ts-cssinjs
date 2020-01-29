@@ -1,4 +1,4 @@
-import { theme } from './theme'
+import theme from './theme'
 import { css } from '@emotion/core'
 
 export default css`
@@ -14,7 +14,7 @@ export default css`
   input {
     font-family: proxima-nova, sans-serif;
     font-weight: ${theme.fontWeights.pr};
-    font-size: 14px;
+    font-size: ${theme.fontSizes.lg};
     line-height: 1.4rem;
     color: ${theme.colors.tx1};
   }
