@@ -27,6 +27,9 @@ export default css`
 
   #root {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     min-height: 100vh;
     background: ${theme.colors.bg1};
   }
