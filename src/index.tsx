@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { GlobalStyle } from './global-style'
-import { Spinner } from './components/shared/spinner'
+import { Global } from '@emotion/core'
 
-console.info(`⚛️ ${React.version}`)
+import globalStyle from './global-style'
+import { Spinner } from './components/shared/spinner'
 
 const App = () => (
   <>
-    <GlobalStyle />
+    <Global styles={globalStyle}></Global>
     <Spinner />
   </>
 )

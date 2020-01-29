@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components'
-import { FontWeights, Colors } from './lib/style-guide'
+import { theme } from './theme'
+import { css } from '@emotion/core'
 
-export const GlobalStyle = createGlobalStyle`
+export default css`
   * {
     box-sizing: border-box;
     margin: 0;
@@ -10,21 +10,23 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
-  body, input {
+  body,
+  input {
     font-family: proxima-nova, sans-serif;
-    font-weight: ${FontWeights.PR};
+    font-weight: ${theme.fontWeights.pr};
     font-size: 14px;
     line-height: 1.4rem;
-    color: ${Colors.TX1};
+    color: ${theme.colors.tx1};
   }
 
-  svg, img {
+  svg,
+  img {
     display: block;
   }
 
   #root {
     display: flex;
     min-height: 100vh;
-    background: ${Colors.BG3};
+    background: ${theme.colors.bg1};
   }
 `
