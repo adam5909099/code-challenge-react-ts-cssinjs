@@ -8,6 +8,7 @@ export default styled.input(({ theme }) => ({
   paddingBottom: 16,
   width: '100%',
   borderBottom: `1px solid ${theme.colors.border}`,
+  marginBottom: 10,
 
   '::placeholder': {
     color: theme.colors.tx4
