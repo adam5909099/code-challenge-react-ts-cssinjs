@@ -2,7 +2,7 @@ const theme = {
   colors: {
     // primary
     accordBlue: '#1b76de',
-    border: '#d1e3f8',
+    border: '#DEECFC',
 
     // standard
     white: '#ffffff',
@@ -13,6 +13,7 @@ const theme = {
     tx1: '#192533',
     tx2: '#324964',
     tx3: '#60789A',
+    tx4: '#8299B6',
 
     // function
     positive: '#36B289',
@@ -39,13 +40,13 @@ const theme = {
   },
 
   fontSizes: {
-    sm: 10,
-    md: 12,
-    lg: 14
+    sm: '10px',
+    md: '12px',
+    lg: '14px'
   },
 
   radii: {
-    md: 4
+    md: '4px'
   },
 
   shadows: {
