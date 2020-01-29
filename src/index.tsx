@@ -5,16 +5,12 @@ import { ThemeProvider } from 'emotion-theming'
 
 import globalStyle from './globalStyle'
 import theme from './theme'
-import Menu from './components/menu/Menu'
-import MenuItem from './components/menu/MenuItem'
+import Menu from './components/Menu'
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <Global styles={globalStyle}></Global>
-    <Menu>
-      <MenuItem>My evaluations</MenuItem>
-      <MenuItem>My steps</MenuItem>
-    </Menu>
+    <Menu items={['My evaluations', 'My steps']}></Menu>
   </ThemeProvider>
 )
 
